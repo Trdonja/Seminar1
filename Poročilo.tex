@@ -354,6 +354,10 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+% Te pakete sem jaz sam vključil:
+\usepackage{verbatim} % za bločne komentarje
+\usepackage{amsfonts} % za številske množice
+\usepackage{amsmath} % za krepke simbole
 
 \begin{document}
 %
@@ -493,7 +497,7 @@ Subsection text here.
 
 \subsection{Delovanje radioterapije}
 
-Visoko energijsko obsevanje celice poškoduje njen genski material, t.j.~deoksiribonukleinsko kislino (DNK), s čimer celica izgubi svoj potencial za nadaljnjo delitev oz.~razmnoževanje. Obsevanje lahko bodisi reagira neposredno s celično DNK in jo poškoduje, kar imenujemo neposredni učinek obsevanja, bodisi z ionizacijo ali vzbujanjem vodnih komponent celic povzroči proste radikale, ki nato poškudujejo celični DNK, kar imenujemo posredni učinek obsevanja.
+Visoko energijsko obsevanje celice poškoduje njen genski material, t.j.~deoksiribonukleinsko kislino (DNK). Če je poškodba DNK tolikšna, da je celica ni zmožna več popraviti, celica izgubi svoj potencial za nadaljnjo delitev oz.~razmnoževanje in sčasoma odmre. Obsevanje lahko bodisi reagira neposredno s celično DNK in jo poškoduje, kar imenujemo neposredni učinek obsevanja, bodisi z ionizacijo ali vzbujanjem vodnih komponent celic povzroči proste radikale, ki nato poškudujejo celični DNK, kar imenujemo posredni učinek obsevanja.
 
 Cilj radioterapije je zadosti poškodovati DNK rakavih celic, da se te prenehajo deliti in sčasoma odmrejo. Obsevanje rakavih celic poškoduje tudi normalne celice, ki se nahajajo v neposredni bližini ali pa na poti do rakavih celic. Čeprav sevanje poškoduje tako rakave kot normalne celice, je cilj radioterapije dostava čim večje doze sevanja rakavim celicam in hkrati čim bolj zmanjšati sevalno izpostavljenost normalnih celic.
 
@@ -503,14 +507,95 @@ Sevanje v radioterapiji je ionizirajoče, kar pomeni, da ga sestavljajo visoko e
 
 Najbolj pogost način obsevanja rakavega mesta je \emph{obsevanje z zunanjimi žarki}, kjer se dostavlja visoko energijske delce s snopi žarkov, ki izvirajo zunaj telesa. Drugi, manj pogost način dostave je \emph{notranje obsevanje}, kjer se vsadi radioaktivni izvor neposredno v tumor.
 
-Tipe sevanja opredeljujejo delci v žarkih. Fotonsko sevanje prenaša energijo z brezmasnimi fotoni (elektromagnetno valovanje). X-žarki in $\gamma$-žarki so razpršena ionizirajoča fotonska sevanja z majhnim LPE. X-žarke ustvarjajo naprave, ki vzbujajo elektrone, to so katodne cevi in linearni pospeševalniki, medtem ko $\gamma$-žarki izvirajo iz radioaktivnega razpada snovi (kobalt-60, radij, cezij). Poleg fotonskih žarkov se nabolj pogosto uporablja še elektronske žarke, ki so posebej učinkoviti pri zdravljenju kožnega raka in tumorjev, ki so blizu površja telesa, kajti elektroni ne prodrejo globoko v tkivo. V sodobni radioterapiji se fotonsko obsevanje postopoma nadomešna z obsevanjem s težjimi delci, kot so protoni, nevtroni ter težki ioni (helij, ogljik, dušik, argon, neon). Tovrstno sevanje ima višji LPE kot fotoni, zato ima višjo biološko efektivnost. So pa naprave za proizvajanje sevanja s tovrstnimi delci (sinhrotroni in ciklotroni) precej dražje.
+Tipe sevanja opredeljujejo delci v žarkih. Fotonsko sevanje prenaša energijo z brezmasnimi fotoni (elektromagnetno valovanje). X-žarki in $\gamma$-žarki so razpršena ionizirajoča fotonska sevanja z majhnim LPE. X-žarke ustvarjajo naprave, ki vzbujajo elektrone, to so katodne cevi in linearni pospeševalniki, medtem ko $\gamma$-žarki izvirajo iz radioaktivnega razpada snovi (kobalt-60, radij, cezij). Poleg fotonskih žarkov se nabolj pogosto uporablja še elektronske žarke, ki so posebej učinkoviti pri zdravljenju kožnega raka in tumorjev, ki so blizu površja telesa, kajti elektroni ne prodrejo globoko v tkivo. V sodobni radioterapiji se fotonsko obsevanje postopoma nadomešča z obsevanjem s težjimi delci, kot so protoni, nevtroni ter težki ioni (helij, ogljik, dušik, argon, neon). Tovrstno sevanje ima višji LPE kot fotoni, zato ima višjo biološko efektivnost. So pa naprave za proizvajanje sevanja s tovrstnimi delci (sinhrotroni in ciklotroni) precej dražje.
 
 Protonski žarki so novejša oblika obsevanja z delci in zaradi svojevrstnega Braggovega vrha ponuja boljšo porazdelitev doze, t.j.~dopušča maksimalen prenos energije na tumor in povzroča minimalno škodo normalnemu tkivu na poti žarka. Uporablja se predvsem za zdravljenje pediatričnih tumorjev in tumorjev blizu kritičnih struktur, kot je hrbtenica, ali pa lobanjski tumorji,
 kajti v teh primerih je prizanašanje normalnemu tkivu ključnega pomena. Ker ciklotroni postajajo cenovno bolj dostopni, lahko v prihodnosti pričakujemo širšo uporabo protonske terapije.
 
-Celice so zmožne tudi popraviti poškodbe DNA in pri tem so običajno zdrave celice hitrejše
+\subsection{Sodobne radioterapevtske tehnike}
 
-\subsection{Slikovno vodena radioterapija s pomočjo izhodiščnih točk zmanjša toksičnost urina}
+\begin{comment}
+Celice so zmožne popraviti manjše poškodbe DNK. \emph{Radioterapija po delih} izkorišča razliko v radiobiološki lastnosti normalnih in rakavih celic: normalne celice se v primerjavi z rakavimi celicami razmnožujejo počasneje, zato imajo več časa, da popravijo poškodbe DNK. Tovrstna radioterapija se izvaja periodično z vmesnimi odmori, ko imajo normalne celice čas, da obnovijo poškodovane DNK. Dnevne doze sevanja pri tovrstni radioterapiji so majhne, od 1.5 do 3 Gy, s čimer se v veliki meri izogne povzročitvi nepopravljive škode na normalnih celicah, je pa zato potrebno obsevanja ponavljati skoraj vsak dan v obdobju nekaj tednov, da se zadane celično smrt rakavim celicam.
+
+Alternativa radioterapiji po delih je \emph{stereotaktična radioterapija}, kjer se dostavlja visoke doze sevanja v zgolj nekaj terapijah. Zaradi visoke doze sevanja je velika verjetnost, da bo celotno tkivo v obsevanem obmčju poškodovano, zato je ključnega pomena, da se obsevano območje prilagodi tumorju kar se da natančno. To nam omogočata \emph{intenzitetno modulirana radioterapija} (IMRT).
+
+katere cilj je natančno dostaviti zelo visoko dozo sevanja v dobro definirano območje tumorja v zgolj nekaj terapijah. Zaradi visoke doze sevanja je zelo verjetno poškodovano celotno tkivo v ciljnem območju. Ker želimo prizadeti čim manj zdravega tkiva v neposredni okolici tumorja, hkrati pa uničiti celotno ... Za dobro prilagoditev obsevalnega območja tumorju se uporabljata tehniki \emph{moduliranja intenzitete} ter \emph{slikovno vodena radioterapija}. Intenzitetno modulirana radioterapija uporablja naprave, imenovane \emph{kolimatorji}
+\end{comment}
+
+Učinkovita sodobna radioterapija temelji na natančnem dostavljanu visoke doze sevanja. Zaradi visoke doze sevanja je velika verjetnost, da je celotno tkivo v obsevanem območju poškodovano, zato je ključnega pomena, da se obsevano območje prilagodi tumorju kar se da natančno in se s tem prizadane čim manj zdravega tkiva. To nam omogočata v nadaljevanju opisani tehniki.
+
+Za \emph{intenzitetno modulirano radioterapijo} je značilno, da uporablja \emph{večlistnate kolimatorje}, to so naprave, ki so zmožne prihajajoče delce sevanja iz izvora preusmeriti v take snope, da skupaj oblikujejo kompleksno 3D obliko polja, v katero sevanje prenese svojo energijo (v nadaljevanju: \emph{radiacijsko polje}). S tem je mogoče oblikovati radiacijska polja, ki se dobro prilegajo tumorju. V ta namen se pred terapijo zajame CT ali MR sliko pacienta, ki skupaj z dodanimi informacijami služi kot načrt za radioterapijo. Med dodane informacije sodijo orisan bruto volumen tumorja (področje na sliki, za katerega je razvidno, da pripada tumorju), orisan volumen klinične tarče (bruto volumen tumorja skupaj z okolico subkliničnega širjenja bolezni) ter orisane morebitne kritične organe, ki jih sevanje ne sme poškodovati. Ker med postopkom slikanja in radioterapije lahko pride do manjših odstopanj v legi pacienta ter do anatomskih premikov, ki jih povzročajo npr.~dihanje, požiranje, peristaltika, itd., zajema končni volumen načrtovane terapije poleg volumna klinične tarče še dodatno okolico, s katero je zagotovljeno, da je pokrit celoten tumor. Na podlagi dobljenega načrta radioterapevtske naprave ustvarijo radiacijsko polje.
+
+Sodobne naprave za radioterapijo združujejo tudi CT skenerje, s katerimi je mogoče posneti CT sliko pacienta nekaj trenutkov pred ali pa kar med radioterapijo in se uporabi za izboljšanje natančnosti sevanja. CT ali MR sliko, ki je bila zajeta za načrtovanje (običajno že nekaj dni pred radioterapijo), se z avtomatskimi postopki poravna na CT sliko, zajeto tik pred ali pa med radioterapijo. S tem poravnamo tudi orisane volumne in tako oblikovanje sevanja sproti prilagajamo trenutni legi pacienta in njegovih anatomskih struktur. Tovrstno tehniko imenujemo \emph{slikovno vodena radioterapija}. Premiki anatomskih struktur zaradi dihanja, požiranja, peristaltike, mišičnega upogibanja in prostovoljnih premikov, ki so lahko posledica bolečin ali nelagodja, med radioterapijo segajo od nekaj milimetrov pa do nekaj centimetrov. Skrajna primera sta gibanje pljučnega tumorja med dihanjem (do 3cm, čeprav bolj tipične vrednosti znašajo okoli 1cm) in pa premiki tumorja na prostati (do 1cm) zaradi spremembe rektalne vsebine. Če se radioterapija ponavlja v več fazah tekom več dni, je potrebno upoštevati tudi skrčenje tumorja, kar je posledica prejšnjih radioterapij, in pa morebitno izgubo telesne mase pacienta zaradi bolezni. Ker torej poravnava slik lahko bistveno pripomore k natančnosti slikovno vodene radioterapije, je smiselno izboljševati natančnost poravnave slik. Pri merjenju naključnih premikov tkiv znotraj telesa je bilo ugotovljeno, da izboljšava v natančnosti določitve radiacijskega polja zgolj za 1--2 mm ne prinese bistvenega dosežka. 
+
+\section{Postopki za avtomatsko poravnavo medicinskih slik}
+
+Slikovna poravnava ali \emph{registracija} je iskanje prostorskih preslikav med dvema ali več zajetimi slikami, ki med njimi vzpostavi smiselno anatomsko ali funkcionalno korespondenco. Registracijo se poleg že prej opisane uporabe v radioterapiji na podoben način uporablja še pri nekaterih operacijskih posegih za medoperacijsko posodabljanje in izboljševanje predoperacijskih načrtov. Namen registracije je lahko tudi omogočiti zdravniku boljše analitske in diagnostične zmožnosti, če poravnamo slike iste osebe, zajete z različnimi protokoli ali pa ob različnih trenutkih. V prvem primeru se uporabi različne slikovne modalitete, s čimer se pridobi komplementarne anatomske ali funkcionalne informacije in se jih v postopku registracije združi, v drugem primeru pa se opazuje spremembe oblike tumorja ali pa različne anatomske spremembe skozi časovno obdobje.
+
+V tem poročilu se bomo omejili na poravnavo dveh slik. Ena izmed njiju se običajno imenuje \emph{izvor} ali \emph{gibljiva slika}, druga pa \emph{tarča} ali \emph{negibna slika}. Gibljiva slika je podana s preslikavo $S\colon\Omega_S\subset\mathbb{R}^d\to\mathbb{R}$, negibna slika pa s $T\colon\Omega_T\subset\mathbb{R}^d\to\mathbb{R}$, $d\in\{2,3\}$. $\Omega_S$ in $\Omega_T$ sta slikovni domeni, medtem ko vrednosti preslikav predstavljajo slikovne intenzitete. Cilj registracije je poiskati preslikavo $W\colon\Omega_S\to\Omega_T$, ki kar se da dobro poravna sliki. Preslikavo $W$ običajno zapišemo v obliki
+\begin{equation}
+ W(\boldsymbol{x}) = \boldsymbol{x} + \boldsymbol{u}(\boldsymbol{x}),
+\end{equation}
+kjer je $\boldsymbol{u}$ vektorsko polje pomikov.
+
+Algoritem za registracijo sestoji iz treh ključnih komponent: \emph{deformacijski model}, \emph{kriterijska funkcija} in pa \emph{optimizacijska metoda}. V nadaljevanju se bomo posvetili vsaki izmed njih posebaj.
+
+\subsection{Deformacijski model}
+
+Deformacijski model je predpis, s katerim podamo množico vseh možnih preslikav, med katerimi algoritem potem skuša poiskati optimalno. Če se da to množico parametrizirati s kako podmnožico $\Theta\subset\mathbb{R}^n$, potem rečemo, da je model \emph{$n$-parametričen} ali pa da ima $n$ \emph{prostostnih stopenj}. Če iščemo optimalno preslikavo recimo v množici vseh afinih preslikav iz $\mathbb{R}^3$ v $\mathbb{R}^3$, potem je ta model 9-parametričen, saj se ga da opisati z devetimi realnimi parametri: trije določajo kote rotacij okoli vsake od koordinatnih osi, trije določajo skaliranje, trije pa komponente translacije. Večje, kot je število prostostnih stopenj, večji spekter možnih preslikav zajame model, vendar pa iskanje optimalne preslikave v modelu tedaj postane bolj zapleteno in računsko bolj zahtevno. Izbira kompleksnosti modela je odvisna od aplikacije; za registracijo slik mehkih tkiv so potrebni visoko-dimenzionalni modeli, ki lahko zajemejo večje lokalne variabilnosti, med tem ko za toge strukture, kot so kosti, zadoščajo nizko-dimenzionalni modeli.
+
+Deformacijske modele v grobem razvrščamo v dve skupini: Modeli, izpeljani iz fizikalnih modelov, ter modeli iz teorije interpolacije. Pri fizikalnih modelih dobimo vektorsko polje pomikov kot rešitev parcialnih diferencialnih enačb, ki izhajajo iz mehanike elastičnih teles, mehanike fluidov, difuzijskih modelov in ostalo. Geometrijske preslikave, ki pripadajo modelom iz teorije interpolacije, tvorijo vektorsko utežene linearne kombinacije bodisi \emph{radialnih baznih funkcij}, \emph{zlepkov} (npr. kubični B-zlepki) oz.~njihovih tenzorskih produktov ali pa baznih funkcij iz Fourierove in valčne analize. Parametri v tovrstnih modelih so vektorske uteži oz.~premiki posameznih vozlišč iz slikovne domene. Pomiki vseh ostalih točk, ki niso vozlišča, so podani z interpolacijo. \emph{Lokalno afini modeli} poiščejo geometrijske preslikave tako, da domeno slike razdelijo na posamezne manjše kose in najprej za njih poišče optimalne afine preslikave, nato pa jih z interpolacijskimi metodami povežejo v skupno globalno preslikavo.
+
+Deformacijski modeli lahko dodatno izkoriščajo predhodno znane informacije, recimo statistične informacije o deformacijskih poljih za določeno populacijo. Na podlagi teh informacij se tvori \emph{statistične deformacijske modele}, katerih prednost je, da imajo manj prostostnih stopenj kot splošni modeli. Vendar pa se tovrstne metode zanašajo na to, da so bile potrebne informacije pridobljene iz statistično reprezentativnega vzorca.
+
+Pogosto so za deformacijske modele zaželjene dodatne lastnosti. Za odražanje realističnih deformacij je recimo smiselno zahtevati, da so preslikave iz deformacijskega modela homeomorfizmi (zvezne bijektivne preslikave z zveznim inverzom). To lastnost v literaturi pogosto imenujejo \emph{ohranjanje topologije}. Še močnejša zahteva je, da so preslikave difeomorfizmi (zvezno odvedljivi homeomorfizmi z zvezno odvedljivimi inverzi), s čimer dobimo določeno stopnjo gladkosti preslikav. Še ena lastnost, ki je sicer bolj lastnost celotnega algoritma in ne zgolj deformacijskega modela, je \emph{simetričnost}. Če pri algoritmu za registracijo zamenjamo sliki, tako da izvor postane tarča in obratno, in pri tem dobimo inverzno preslikavo, potem je algoritem \emph{simetričen}, sicer je \emph{asimetričen}.
+
+\subsection{Kriterijska funkcija}
+
+Kriterijska funkcija je funkcija, ki kvantitativno ovrednoti, kako dobro sta sliki poravnani. Če je model parametriziran z množico $\Theta$, potem se pričakuje, da kriterijska funkcija $M\colon\Theta\to\mathbb{R}$ zavzame svoj minimum pri tistem parametru $\boldsymbol{\theta}\in\Theta$, ki v danem modelu ponuja najboljšo poravnavo slik. Ker definiranje pojma \textit{najboljša poravnava} predstavlja precejšen izziv, je tudi izbira ustrezne kriterijske funkcije v praksi precej težek problem. Običajno se kriterijski funkciji prišteje še t.~i.~\emph{regularizacijski člen} $R$, ki odvrača nerealistične preslikave, in se nato poišče
+\begin{equation}
+ \arg\min_{\boldsymbol{\theta}}M\big(T,S\circ W(\boldsymbol{\theta})\big)+R\big(W(\boldsymbol{\theta})\big).
+\end{equation}
+
+
+Kriterijske funkcije se v grobem delijo v dve skupini: \emph{geometrijske} in \emph{ikonične}. V prvem primeru se najprej z avtomatskimi ali pa ročnimi postopki na obeh slikah poiščejo izstopajoče oslonilne točke, kriterijska funkcija pa potem med njimi skuša poiskati korespondenčne pare na podlagi opisnikov oslonilnih točk. Tovrstne kriterijske funkcije pridejo v upoštev pri modelih z radialnimi baznimi funkcijami, ki tvorijo transformacijo s interpolacijo na osnovi oslonilnih točk. Namesto oslonilnih točk se lahko, če so na voljo, uporabi tudi kar njihove verjetnostne porazdelitve, ali pa značilne regije, ploskve in linije. Ikonične kriterijske funkcije za kriterij podobnosti izkoriščajo informacijo iz intenzitet vseh slikovnih elementov. Izbira ikoničnih kriterijskih funkcij mora upoštevati, ali imamo pri poravnavi opravka z monomodalnim primerom (obe sliki sta zajeti po enakem protokolu, pridobljen je isti tip informacij) ali z multimodalnim primerom (sliki sta zajeti po različnem protokolu).
+
+Pri poravnavi monomodalnih slik je kriterijska funkcija v najpreprostejšem primeru lahko zgolj vsota kvadratov razlik v intenziteti istoležečih vokslov obeh slik. Izboljšane funkcije uporabljajo večdimenzionalne statistike, imenovane \emph{značilnice}, prirejene vsakemu slikovnemu elementu posebaj, in vsebujejo informacije o izgledu okolice posameznega slikovnega elementa. Poravnava multimodalnih slik zahteva bolj dovršene kriterijske funkcije. Te običajno izvirajo iz teorije informacij in uporabljajo korelacijsko razmerje, medsebojno informacijo ali Kullback-Leiblerjevo divergenco. Manj pogost pristop je prevedba slik v isto modaliteto in nato uporaba kriterijskih funkcij za monomodalne poravnave.
+
+\subsection{Optimizacijske metode}
+
+Ko sta deformacijski model in kriterijska funkcija izbrana, preostane računsko najbolj zahteven del registracije, to je iskanje parametrov, ki optimizirajo kriterijsko funkcijo. Kriterijske funkcije so običajno nelinearne in nekonveksne, kar nas omeji na iskanje zgolj lokalnih ekstremov, optimizacija pa v teh primerih postane slabo pogojen problem, kar pomeni, da že majhne variacije v vhodnih podatkih (slikah) ali začetnih približkih lahko zelo vplivajo na končni rezultat (poravnava). Dodatno je postopek optimizacije otežen, če ima model visoko število prostostnih stopenj.
+
+Če optimizacijska metoda išče optimalni parameter zgolj v diskretni podmnožici množice $\Theta$, potem  jo uvrščamo med diskretne metode, sicer pa med zvezne metode.
+
+Skupno zveznim optimizacijskim metodam je, da iščejo optimalni parameter iterativno
+\begin{equation}
+ \boldsymbol{\theta}_{k+1}=\boldsymbol{\theta}_k+\alpha_k\boldsymbol{g}_k(f(\boldsymbol{\theta}_k)),
+\end{equation}
+kjer je $k\in\mathbb{N}$ korak iteracije, $\boldsymbol{\theta}_k$ $k$-ti približek optimalnega parametra, $\alpha_k$ realno število, $f=M+R$ kriterijska funkcija ter $\boldsymbol{g}_k$ smer iskanja. \emph{Gradientne metode} za $\boldsymbol{g}$ vzamejo smer največjega spusta, $\boldsymbol{g}_k = -\nabla_{\boldsymbol{\theta}}f(\boldsymbol{\theta_k})$. \emph{Metode konjugiranih gradientov} pospešijo konvergenco z izbiro $\boldsymbol{g}_k = -\nabla_{\boldsymbol{\theta}}f(\boldsymbol{\theta_k})+\beta_k\boldsymbol{g}_{k-1}$, kjer je potrebno še primerno izbrati realne parametre $\beta_k$. \emph{Kvazi-Newtonove metode} iščejo stacionarne točke kot ničle gradienta s posplošeno Newtonovo metodo, tako da je $\boldsymbol{g}=-\hat{H}^{-1}(\boldsymbol{\theta})\nabla_{\boldsymbol{\theta}}f(\boldsymbol{\theta})$, kjer je matrika $\hat{H}$ približek za Hessejevo matriko drugih odvodov funkcije $f$. Računanje odvodov je računsko zahteven postopek, če dimenzionalnost prostora parametričnega prostora $\Theta$ velika, zato se v tovrstnih primerih uporablja \emph{stohastične gradientne metode}, kjer se namesto gradienta uporabi približek za gradient, izračunan z računsko manj zahtevnimi postopki.
+
+Diskretne optimizacijske metode, ki temeljijo na teoriji grafov, prevedejo optimizacijski problem na problem maksimalnega pretoka oz.~minimalnega prereza v primerno skonstruiranem uteženem grafu. Tovrsten problem je dobro poznan problem iz linearne optimizacije in se ga da učinkovito rešiti z algoritmom Edmonds-Karp. Preostale diskretne metode so \emph{metode širjenje verjetja} in pa metode, ki dani problem skušajo simulirati s preprostejšim problemom, rešljivim z linearnim programiranjem. Pomankljivost diskretnih metode je, da išče optimalne parametre le v naprej definiranih diskretnih podmnožicah parametrov, torej so manj natančne, so pa zato računsko bolj učinkovite.
+
+
+\section{Kriteriji za vrednotenje kakovosti poravnave slik}
+
+
+\begin{comment}
+Za kvantitativno ovrednotenje kvalitete poravnave se uporablja več različnih kriterijev. Med najpogosteje uporabljenimi sta mera DICE (angl. DICE similarity measure) ter modificirana Hausdorffova razdalja, ki računa razdaljo med ploskvami segmentiranih anatomskih struktur:
+\begin{equation}
+ H = frac{1}{n}\min_{x\in A,\ y\in B} d(x,y)
+\end{equation}
+Mera DICE je izražena z enačbo
+\begin{equation}
+ D = \frac{|A\cap B|}{2(|A| + |B|)},
+\end{equation}
+kjer $|\cdot|$ označuje moč množice, $A$ je množica vokslov, ki pipada prvi segmentirani anatomski strukturi, $B$ pa je množica vokslov, ki pipada drugi anatomski strukturi. DICE doseže vrednost 1,
+ko se anatomski strukturi na sliki popolnoma prekrivata, nižje vrednosti pa pomenijo slabšo poravnavo. Hausdorffova razdalja pa doseže nizke vrednosti za popolne poravnave ter višje vrednosti za nepopolne; idealno je 0. Rezultati v meri dice se lahko precej razlikujejo glede na različne anatomske strukture. Za strukture, ki imajo večje razmerje med površino in volumnom (npr. hrbtenjača) je značilno, da je mera dice nekoliko nižja, zato tu ne gre pričakovati visokih rezultatov. Za tovrstne anatomske strukture je bolje uporabiti Hausdorffovo razdaljo.
+\end{comment}
+
+
+
+
 
 
 
