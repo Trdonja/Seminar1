@@ -1,0 +1,599 @@
+
+@article{veiga2014,
+  title = {Toward adaptive radiotherapy for head and neck patients: {{Feasibility}} study on using {{CT}}-to-{{CBCT}} deformable registration for ``dose of the day'' calculations},
+  volume = {41},
+  issn = {0094-2405},
+  shorttitle = {Toward adaptive radiotherapy for head and neck patients},
+  doi = {10.1118/1.4864240},
+  abstract = {Purpose: The aim of this study was to evaluate the appropriateness of using computed tomography (CT) to cone-beam CT (CBCT) deformable image registration (DIR) for the application of calculating the ``dose of the day'' received by a head and neck patient. Methods: NiftyReg is an open-source registration package implemented in our institution. The affine registration uses a Block Matching-based approach, while the deformable registration is a GPU implementation of the popular B-spline Free Form Deformation algorithm. Two independent tests were performed to assess the suitability of our registrations methodology for ``dose of the day'' calculations in a deformed CT. A geometric evaluation was performed to assess the ability of the DIR method to map identical structures between the CT and CBCT datasets. Features delineated in the planning CT were warped and compared with features manually drawn on the CBCT. The authors computed the dice similarity coefficient (DSC), distance transformation, and centre of mass distance between features. A dosimetric evaluation was performed to evaluate the clinical significance of the registrations errors in the application proposed and to identify the limitations of the approximations used. Dose calculations for the same intensity-modulated radiation therapy plan on the deformed CT and replan CT were compared. Dose distributions were compared in terms of dose differences (DD), gamma analysis, target coverage, and dose volume histograms (DVHs). Doses calculated in a rigidly aligned CT and directly in an extended CBCT were also evaluated. Results: A mean value of 0.850 in DSC was achieved in overlap between manually delineated and warped features, with the distance between surfaces being less than 2 mm on over 90\% of the pixels. Deformable registration was clearly superior to rigid registration in mapping identical structures between the two datasets. The dose recalculated in the deformed CT is a good match to the dose calculated on a replan CT. The DD is smaller than 2\% of the prescribed dose on 90\% of the body\&apos;s voxels and it passes a 2\% and 2 mm gamma-test on over 95\% of the voxels. Target coverage similarity was assessed in terms of the 95\%-isodose volumes. A mean value of 0.962 was obtained for the DSC, while the distance between surfaces is less than 2 mm in 95.4\% of the pixels. The method proposed provided adequate dose estimation, closer to the gold standard than the other two approaches. Differences in DVH curves were mainly due to differences in the OARs definition (manual vs warped) and not due to differences in dose estimation (dose calculated in replan CT vs dose calculated in deformed CT). Conclusions: Deforming a planning CT to match a daily CBCT provides the tools needed for the calculation of the ``dose of the day'' without the need to acquire a new CT. The initial clinical application of our method will be weekly offline calculations of the ``dose of the day,'' and use this information to inform adaptive radiotherapy (ART). The work here presented is a first step into a full implementation of a ``dose-driven'' online ART.},
+  timestamp = {2016-06-09T13:25:13Z},
+  number = {3},
+  urldate = {2016-06-09},
+  journal = {Medical Physics},
+  author = {Veiga, Catarina and McClelland, Jamie and Moinuddin, Syed and Louren{\c c}o, Ana and Ricketts, Kate and Annkah, James and Modat, Marc and Ourselin, S{\'e}bastien and D'Souza, Derek and Royle, Gary},
+  month = mar,
+  year = {2014},
+  keywords = {Anatomy,Computed tomography,Cone beam computed tomography,Dosimetry,Medical imaging},
+  pages = {031703},
+  file = {Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/4AHPFUW3/Veiga idr. - 2014 - Toward adaptive radiotherapy for head and neck pat.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/XDMJRWFU/1.html:text/html}
+}
+
+@article{leibfarth2013,
+  title = {A strategy for multimodal deformable image registration to integrate {{PET}}/{{MR}} into radiotherapy treatment planning},
+  volume = {52},
+  issn = {0284186X},
+  doi = {10.3109/0284186X.2013.813964},
+  abstract = {Background. Combined positron emission tomography (PET)/magnetic resonance imaging (MRI) is highly promising for biologically individualized radiotherapy (RT). Hence, the purpose of this work was to develop an accurate and robust registration strategy to integrate combined PET/MR data into RT treatment planning. Material and methods. Eight patient datasets consisting of an FDG PET/computed tomography (CT) and a subsequently acquired PET/MR of the head and neck (HN) region were available. Registration strategies were developed based on CT and MR data only, whereas the PET components were fused with the resulting deformation field. Following a rigid registration, deformable registration was performed with a transform parametrized by B-splines. Three different optimization metrics were investigated: global mutual information (GMI), GMI combined with a bending energy penalty (BEP) for regularization (GMI+ BEP) and localized mutual information with BEP (LMI+ BEP). Different quantitative registration quality measures were developed, including volumetric overlap and mean distance measures for structures segmented on CT and MR as well as anatomical landmark distances. Moreover, the local registration quality in the tumor region was assessed by the normalized cross correlation (NCC) of the two PET datasets. Results. LMI+ BEP yielded the most robust and accurate registration results. For GMI, GMI+ BEP and LMI+ BEP, mean landmark distances (standard deviations) were 23.9 mm (15.5 mm), 4.8 mm (4.0 mm) and 3.0 mm (1.0 mm), and mean NCC values (standard deviations) were 0.29 (0.29), 0.84 (0.14) and 0.88 (0.06), respectively. Conclusion. Accurate and robust multimodal deformable image registration of CT and MR in the HN region can be performed using a B-spline parametrized transform and LMI+ BEP as optimization metric. With this strategy, biologically individualized RT based on combined PET/MRI in terms of dose painting is possible.},
+  timestamp = {2016-06-14T12:49:50Z},
+  number = {7},
+  urldate = {2016-03-18},
+  journal = {Acta Oncologica},
+  author = {Leibfarth, Sara and M{\"o}nnich, David and Welz, Stefan and Siegel, Christine and Schwenzer, Nina and Schmidt, Holger and Zips, Daniel and Thorwarth, Daniela},
+  month = oct,
+  year = {2013},
+  keywords = {Algorithms,COMPUTERS in medicine,DESCRIPTIVE statistics,DICOM (Computer network protocol),EMISSION tomography,Magnetic Resonance Imaging,METHODOLOGY,QUALITY assurance,RADIOTHERAPY,RESEARCH -- Finance,RESEARCH -- Methodology},
+  pages = {1353--1359},
+  file = {EBSCO Full Text:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/ZCDS5VZ6/Leibfarth idr. - 2013 - A strategy for multimodal deformable image registr.pdf:application/pdf}
+}
+
+@article{mencarelli2014a,
+  title = {Automatic detection system for multiple region of interest registration to account for posture changes in head and neck radiotherapy},
+  volume = {59},
+  issn = {0031-9155},
+  doi = {10.1088/0031-9155/59/8/2005},
+  abstract = {Despite immobilization of head and neck (H and N) cancer patients, considerable posture changes occur over the course of radiotherapy (RT). To account for the posture changes, we previously implemented a multiple regions of interest (mROIs) registration system tailored to the H and N region for image-guided RT correction strategies. This paper is focused on the automatic segmentation of the ROIs in the H and N region. We developed a fast and robust automatic detection system suitable for an online image-guided application and quantified its performance. The system was developed to segment nine high contrast structures from the planning CT including cervical vertebrae, mandible, hyoid, manubrium of sternum, larynx and occipital bone. It generates nine 3D rectangular-shaped ROIs and informs the user in case of ambiguities. Two observers evaluated the robustness of the segmentation on 188 H and N cancer patients. Bland\textendash{}Altman analysis was applied to a sub-group of 50 patients to compare the registration results using only the automatically generated ROIs and those manually set by two independent experts. Finally the time performance and workload were evaluated. Automatic detection of individual anatomical ROIs had a success rate of 97\%/53\% with/without user notifications respectively. Following the notifications, for 38\% of the patients one or more structures were manually adjusted. The processing time was on average 5 s. The limits of agreement between the local registrations of manually and automatically set ROIs was comprised between \ensuremath{\pm}1.4 mm, except for the manubrium of sternum (-1.71 mm and 1.67 mm), and were similar to the limits agreement between the two experts. The workload to place the nine ROIs was reduced from 141 s (\ensuremath{\pm}20 s) by the manual procedure to 59 s (\ensuremath{\pm}17 s) using the automatic method. An efficient detection system to segment multiple ROIs was developed for Cone-Beam CT image-guided applications in the H and N region and is clinically implemented in our department.},
+  language = {en},
+  timestamp = {2016-06-15T12:58:03Z},
+  number = {8},
+  urldate = {2016-06-15},
+  journal = {Phys. Med. Biol.},
+  author = {Mencarelli, A. and {van Beek}, S. and Zijp, L. J. and Rasch, C. and {van Herk}, M. and Sonke, J.-J.},
+  year = {2014},
+  pages = {2005},
+  file = {IOP Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/M9Q3U4HZ/Mencarelli idr. - 2014 - Automatic detection system for multiple region of .pdf:application/pdf}
+}
+
+@article{unser1999,
+  title = {Splines: a perfect fit for signal and image processing},
+  volume = {16},
+  issn = {1053-5888},
+  shorttitle = {Splines},
+  doi = {10.1109/79.799930},
+  abstract = {The article provides arguments in favor of an alternative approach that uses splines, which is equally justifiable on a theoretical basis, and which offers many practical advantages. To reassure the reader who may be afraid to enter new territory, it is emphasized that one is not losing anything because the traditional theory is retained as a particular case (i.e., a spline of infinite degree). The basic computational tools are also familiar to a signal processing audience (filters and recursive algorithms), even though their use in the present context is less conventional. The article also brings out the connection with the multiresolution theory of the wavelet transform. This article attempts to fulfil three goals. The first is to provide a tutorial on splines that is geared to a signal processing audience. The second is to gather all their important properties and provide an overview of the mathematical and computational tools available; i.e., a road map for the practitioner with references to the appropriate literature. The third goal is to give a review of the primary applications of splines in signal and image processing},
+  timestamp = {2016-06-14T10:36:59Z},
+  number = {6},
+  journal = {IEEE Signal Processing Magazine},
+  author = {Unser, M.},
+  month = nov,
+  year = {1999},
+  keywords = {Bandwidth,computational tools,digital filtering,filtering theory,filters,Image converters,Image edge detection,image processing,interpolation,mathematical tools,multiresolution theory,Polynomials,recursive algorithms,signal,signal processing,Signal processing algorithms,Signal representations,signal resolution,signal sampling,splines,spline sampling theory,Splines (mathematics),tutorial,wavelet transform,wavelet transforms},
+  pages = {22--38},
+  file = {IEEE Xplore Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/S87FJAZA/Unser - 1999 - Splines a perfect fit for signal and image proces.pdf:application/pdf;IEEE Xplore Abstract Record:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/GCITFJFW/abs_all.html:text/html}
+}
+
+@article{sotiras2013,
+  title = {Deformable {{Medical Image Registration}}: {{A Survey}}},
+  volume = {32},
+  issn = {0278-0062},
+  shorttitle = {Deformable {{Medical Image Registration}}},
+  doi = {10.1109/TMI.2013.2265603},
+  abstract = {Deformable image registration is a fundamental task in medical image processing. Among its most important applications, one may cite: 1) multi-modality fusion, where information acquired by different imaging devices or protocols is fused to facilitate diagnosis and treatment planning; 2) longitudinal studies, where temporal structural or anatomical changes are investigated; and 3) population modeling and statistical atlases used to study normal anatomical variability. In this paper, we attempt to give an overview of deformable registration methods, putting emphasis on the most recent advances in the domain. Additional emphasis has been given to techniques applied to medical images. In order to study image registration methods in depth, their main components are identified and studied independently. The most recent techniques are presented in a systematic fashion. The contribution of this paper is to provide an extensive account of registration techniques in a systematic manner.},
+  timestamp = {2016-03-10T07:19:38Z},
+  number = {7},
+  journal = {IEEE Transactions on Medical Imaging},
+  author = {Sotiras, A. and Davatzikos, C. and Paragios, N.},
+  month = jul,
+  year = {2013},
+  keywords = {Algorithms,Bibliographical review,Biomedical imaging,Computational modeling,deformable medical image registration,Deformable models,deformable registration,diagnosis,Diagnostic Imaging,Humans,image fusion,Image Processing; Computer-Assisted,image registration,imaging devices,information acquisition,Linear programming,Mathematical model,medical image analysis,medical image processing,multimodality fusion,normal anatomical variability,patient treatment,population modeling,protocols,statistical analysis,statistical atlases,temporal anatomical changes,temporal structural changes,Topology,treatment planning},
+  pages = {1153--1190},
+  file = {IEEE Xplore Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/BS7USHS4/Sotiras idr. - 2013 - Deformable Medical Image Registration A Survey.pdf:application/pdf;IEEE Xplore Abstract Record:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/SQEF4PS6/abs_all.html:text/html}
+}
+
+@article{hardcastle2012,
+  title = {A multi-institution evaluation of deformable image registration algorithms for automatic organ delineation in adaptive head and neck radiotherapy},
+  volume = {7},
+  issn = {1748-717X},
+  doi = {10.1186/1748-717X-7-90},
+  abstract = {Adaptive Radiotherapy aims to identify anatomical deviations during a radiotherapy course and modify the treatment plan to maintain treatment objectives. This requires regions of interest (ROIs) to be defined using the most recent imaging data. This study investigates the clinical utility of using deformable image registration (DIR) to automatically propagate ROIs.},
+  timestamp = {2016-06-14T12:49:58Z},
+  urldate = {2016-06-14},
+  journal = {Radiation Oncology},
+  author = {Hardcastle, Nicholas and Tom{\'e}, Wolfgang A. and Cannon, Donald M. and Brouwer, Charlotte L. and Wittendorp, Paul WH and Dogan, Nesrin and Guckenberger, Matthias and Allaire, St{\'e}phane and Mallya, Yogish and Kumar, Prashant and Oechsner, Markus and Richter, Anne and Song, Shiyu and Myers, Michael and Polat, B{\"u}lent and Bzdusek, Karl},
+  year = {2012},
+  keywords = {Adaptive radiotherapy,Deformable image registration,Head and neck cancer},
+  pages = {90},
+  file = {Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/HKIGNN99/Hardcastle idr. - 2012 - A multi-institution evaluation of deformable image.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/XHNBFB8U/1748-717X-7-90.html:text/html}
+}
+
+@article{fortunati2014,
+  title = {Feasibility of multimodal deformable registration for head and neck tumor treatment planning},
+  volume = {90},
+  issn = {1879-355X},
+  doi = {10.1016/j.ijrobp.2014.05.027},
+  abstract = {PURPOSE: To investigate the feasibility of using deformable registration in clinical practice to fuse MR and CT images of the head and neck for treatment planning.
+METHOD AND MATERIALS: A state-of-the-art deformable registration algorithm was optimized, evaluated, and compared with rigid registration. The evaluation was based on manually annotated anatomic landmarks and regions of interest in both modalities. We also developed a multiparametric registration approach, which simultaneously aligns T1- and T2-weighted MR sequences to CT. This was evaluated and compared with single-parametric approaches.
+RESULTS: Our results show that deformable registration yielded a better accuracy than rigid registration, without introducing unrealistic deformations. For deformable registration, an average landmark alignment of approximatively 1.7 mm was obtained. For all the regions of interest excluding the cerebellum and the parotids, deformable registration provided a median modified Hausdorff distance of approximatively 1 mm. Similar accuracies were obtained for the single-parameter and multiparameter approaches.
+CONCLUSIONS: This study demonstrates that deformable registration of head-and-neck CT and MR images is feasible, with overall a significanlty higher accuracy than for rigid registration.},
+  timestamp = {2016-06-14T12:45:55Z},
+  number = {1},
+  journal = {International Journal of Radiation Oncology, Biology, Physics},
+  author = {Fortunati, Valerio and Verhaart, Ren{\'e} F. and Angeloni, Francesco and {van der Lugt}, Aad and Niessen, Wiro J. and Veenland, Jifke F. and Paulides, Margarethus M. and {van Walsum}, Theo},
+  month = sep,
+  year = {2014},
+  keywords = {Algorithms,Anatomic Landmarks,Feasibility Studies,Head and Neck Neoplasms,Humans,Hyperthermia; Induced,Magnetic Resonance Imaging,Multimodal Imaging,Observer Variation,Patient Positioning,Radiotherapy Planning; Computer-Assisted,Statistics; Nonparametric,Therapy; Computer-Assisted,Tomography; X-Ray Computed},
+  pages = {85--93},
+  file = {fortunati2014.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/XFBQ83ZX/fortunati2014.pdf:application/pdf},
+  pmid = {25015199}
+}
+
+@misc{centerforhistoryandnewmedia,
+  title = {Hitri vodnik {{Zotero}}},
+  timestamp = {2016-03-10T07:17:03Z},
+  howpublished = {\url{http://zotero.org/support/quick_start_guide}},
+  author = {{Center for History and New Media}}
+}
+
+@article{zhang2007,
+  title = {Automatic {{Delineation}} of {{On-Line Head-And-Neck Computed Tomography Images}}: {{Toward On-Line Adaptive Radiotherapy}}},
+  volume = {68},
+  issn = {0360-3016},
+  shorttitle = {Automatic {{Delineation}} of {{On-Line Head-And-Neck Computed Tomography Images}}},
+  doi = {10.1016/j.ijrobp.2007.01.038},
+  abstract = {Purpose: To develop and validate a fully automatic region-of-interest (ROI) delineation method for on-line adaptive radiotherapy.
+
+Methods and Materials: On-line adaptive radiotherapy requires a robust and automatic image segmentation method to delineate ROIs in on-line volumetric images. We have implemented an atlas-based image segmentation method to automatically delineate ROIs of head-and-neck helical computed tomography images. A total of 32 daily computed tomography images from 7 head-and-neck patients were delineated using this automatic image segmentation method. Manually drawn contours on the daily images were used as references in the evaluation of automatically delineated ROIs. Two methods were used in quantitative validation: (1) the dice similarity coefficient index, which indicates the overlapping ratio between the manually and automatically delineated ROIs; and (2) the distance transformation, which yields the distances between the manually and automatically delineated ROI surfaces.
+
+Results: Automatic segmentation showed agreement with manual contouring. For most ROIs, the dice similarity coefficient indexes were approximately 0.8. Similarly, the distance transformation evaluation results showed that the distances between the manually and automatically delineated ROI surfaces were mostly within 3 mm. The distances between two surfaces had a mean of 1 mm and standard deviation of \&lt;2 mm in most ROIs.
+
+Conclusion: With atlas-based image segmentation, it is feasible to automatically delineate ROIs on the head-and-neck helical computed tomography images in on-line adaptive treatments.},
+  timestamp = {2016-06-14T12:49:41Z},
+  number = {2},
+  urldate = {2016-06-13},
+  journal = {International Journal of Radiation Oncology*Biology*Physics},
+  author = {Zhang, Tiezhi and Chi, Yuwei and Meldolesi, Elisa and Yan, Di},
+  month = jun,
+  year = {2007},
+  keywords = {Adaptive radiotherapy,Deformable image registration,Image-guided radiotherapy,Region-of-interest delineation},
+  pages = {522--530},
+  file = {zhang2007.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/RRKHZW9I/zhang2007.pdf:application/pdf;ScienceDirect Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/FE3BPIXX/S036030160700199X.html:text/html}
+}
+
+@article{crum2004,
+  title = {Non-rigid image registration: theory and practice},
+  volume = {77 Spec No 2},
+  issn = {0007-1285},
+  shorttitle = {Non-rigid image registration},
+  doi = {10.1259/bjr/25329214},
+  abstract = {Image registration is an important enabling technology in medical image analysis. The current emphasis is on development and validation of application-specific non-rigid techniques, but there is already a plethora of techniques and terminology in use. In this paper we discuss the current state of the art of non-rigid registration to put on-going research in context and to highlight current and future clinical applications that might benefit from this technology. The philosophy and motivation underlying non-rigid registration is discussed and a guide to common terminology is presented. The core components of registration systems are described and outstanding issues of validity and validation are confronted.},
+  timestamp = {2016-06-14T12:47:26Z},
+  journal = {The British Journal of Radiology},
+  author = {Crum, W. R. and Hartkens, T. and Hill, D. L. G.},
+  year = {2004},
+  keywords = {Algorithms,Diagnostic Imaging,Humans,Image Processing; Computer-Assisted,Magnetic Resonance Imaging,Models; Anatomic,Reproducibility of Results,Terminology as Topic},
+  pages = {S140--153},
+  file = {crum2004.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/DUCQAJCK/crum2004.pdf:application/pdf},
+  pmid = {15677356}
+}
+
+@article{noe2008,
+  title = {Acceleration and validation of optical flow based deformable registration for image-guided radiotherapy},
+  volume = {47},
+  issn = {0284-186X},
+  doi = {10.1080/02841860802258760},
+  abstract = {Materials and methods. Two registration methods based on optical flow estimation have been programmed to run on a graphics programming unit (GPU). One of these methods by Horn \& Schunck is tested on a 4DCT thorax data set with 10 phases and 41 landmarks identified per phase. The other method by Cornelius \& Kanade is tested on a series of six 3D cone beam CT (CBCT) data sets and a conventional planning CT data set from a head and neck cancer patient. In each of these data sets 6 landmark points have been identified on the cervical vertebrae and the base of skull. Both CBCT to CBCT and CBCT to CT registration is performed. Results. For the 4DCT registration average landmark error was reduced by deformable registration from 3.5\ensuremath{\pm}2.0mm to 1.1\ensuremath{\pm}0.6mm. For CBCT to CBCT registration the average bone landmark error was 1.8\ensuremath{\pm}1.0mm after rigid registration and 1.6\ensuremath{\pm}0.8mm after deformable registration. For CBCT to CT registration errors were 2.2\ensuremath{\pm}0.6mm and 1.8\ensuremath{\pm}0.6mm for rigid and deformable registration respectively. Using GPU hardware the Horn \& Schunck method was accelerated by a factor of 48. The 4DCT registration can be performed in 37seconds. The head and neck cancer patient registration takes 64seconds. Discussion. Compared to image slice thickness, which limits accuracy of landmark point determination, we consider the landmark point accuracy of the registration acceptable. The points identified in the CBCT images do not give a full impression of the result of doing deformable registration as opposed to rigid registration. A larger validation study is being planned in which soft tissue landmarks will facilitate tracking the deformable registration. The acceleration obtained using GPU hardware means that registration can be done online for CBCT.},
+  timestamp = {2016-06-09T10:05:37Z},
+  number = {7},
+  urldate = {2016-06-09},
+  journal = {Acta Oncologica},
+  author = {Noe, Karsten \O{}stergaard and Senneville, Baudouin Denis De and Elstr\o{}m, Ulrik Vindelev and Tanderup, Kari and S\o{}rensen, Thomas Sangild},
+  month = jan,
+  year = {2008},
+  pages = {1286--1293},
+  file = {Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/5HTET6J4/Noe idr. - 2008 - Acceleration and validation of optical flow based .pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/VZMA7FDC/02841860802258760.html:text/html}
+}
+
+@article{castadot2008,
+  title = {Comparison of 12 deformable registration strategies in adaptive radiation therapy for the treatment of head and neck tumors},
+  volume = {89},
+  issn = {0167-8140},
+  doi = {10.1016/j.radonc.2008.04.010},
+  abstract = {Background and purpose
+Weight loss, tumor shrinkage, and tissue edema induce substantial modification of patient's anatomy during head and neck (HN) radiotherapy (RT) or chemo-radiotherapy. These modifications may impact on the dose distribution to both target volumes (TVs) and organs at risk (OARs). Adaptive radiotherapy (ART) where patients are re-imaged and re-planned several times during the treatment is a possible strategy to improve treatment delivery. It however requires the use of specific deformable registration (DR) algorithms that requires proper validation on a clinical material.
+Materials and methods
+Twelve voxel-based DR strategies were compared with a dataset of 5 patients imaged with computed tomography (CT) before and once during RT (on average after a mean dose of 36.8 Gy): level-set (LS), level-set implemented in multi-resolution (LSMR), Demons' algorithm implemented in multi-resolution (DMR), DMR followed by LS (DMR-LS), fast free-form deformable registration via calculus of variations (F3CV) and F3CV followed by LS (F3CV-LS). The use of an edge-preserving denoising filter called ``local M-smoothers'' applied to the registered images and combined to all the aforesaid strategies was also tested (fLS, fLSMR, fDMR, fDMR-LS, fF3CV, fF3CV-LS). All these strategies were compared to a rigid registration based on mutual information (MI, fMI). Chronological and anti-chronological registrations were also studied. The various DR strategies were evaluated using a volume-based criterion (i.e. Dice similarity index, DSI) and a voxel-intensity criterion (i.e. correlation coefficient, CC) on a total of 18 different manually contoured volumes.
+Results
+For the DSI analysis, the best three strategies were DMR, fDMR-LS, and fDMR, with the median values of 0.86, 0.85 and 0.85, respectively; corresponding inter-quartile range (IQR) reached 9.6\%, 10\% and 10.2\%. For the CC analysis, the best three strategies were fDMR-LS, DMR-LS and DMR with the median values of 0.97, 0.96 and 0.94, respectively; corresponding IQR reached 11\%, 9\% and 15\%. Concerning the time-sequence analysis, the anti-chronological registration (all deformable strategies pooled) showed a better median DSI value (0.84 vs 0.83, p \&lt; 0.001) and IQR (11.2\% vs 12.4\%). For CC, the anti-chronological registration (all deformable strategies pooled) had a slightly lower median value (0.91 vs 0.912, p \&lt; 0.001) but a better IQR (16.4\% vs 21\%).
+Conclusions
+The use of fDMR-LS is a good registration strategy for HN-ART as it is the best compromise in terms of median and IQR for both DSI and CC. Even though less robust in terms of CC, DMR is a good alternative. None of the time-sequence appears superior.},
+  timestamp = {2016-06-14T12:49:34Z},
+  number = {1},
+  urldate = {2016-06-09},
+  journal = {Radiotherapy and Oncology},
+  author = {Castadot, Pierre and Lee, John Aldo and Parraga, Adriane and Geets, Xavier and Macq, Beno{\^\i}t and Gr{\'e}goire, Vincent},
+  month = oct,
+  year = {2008},
+  keywords = {Adaptive radiotherapy,Deformable registration algorithms,Head and neck cancer},
+  pages = {1--12},
+  file = {ScienceDirect Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/PMRSKWF8/Castadot idr. - 2008 - Comparison of 12 deformable registration strategie.pdf:application/pdf;ScienceDirect Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/7RVRSTDI/S0167814008002302.html:text/html}
+}
+
+@article{hou2011,
+  title = {Deformable planning {{CT}} to cone-beam {{CT}} image registration in head-and-neck cancer},
+  volume = {38},
+  issn = {0094-2405},
+  doi = {10.1118/1.3554647},
+  abstract = {Purpose: The purpose of this work was to implement and validate a deformable CT to cone-beam computed tomography(CBCT)image registration method in head-and-neck cancer to eventually facilitate automatic target delineation on CBCT. Methods: Twelve head-and-neck cancer patients underwent a planning CT and weekly CBCT during the 5\textendash{}7 week treatment period. The 12 planning CTimages (moving images) of these patients were registered to their weekly CBCTimages (fixed images) via the symmetric force Demons algorithm and using a multiresolution scheme. Histogram matching was used to compensate for the intensity difference between the two types of images. Using nine known anatomic points as registration targets, the accuracy of the registration was evaluated using the target registration error (TRE). In addition, region-of-interest (ROI) contours drawn on the planning CT were morphed to the CBCTimages and the volume overlap index (VOI) between registered contours and manually delineated contours was evaluated. Results: The mean TRE value of the nine target points was less than 3.0 mm, the slice thickness of the planning CT. Of the 369 target points evaluated for registration accuracy, the average TRE value was 2.6 \ensuremath{\pm} 0.6 mm . The mean TRE for bony tissue targets was 2.4 \ensuremath{\pm} 0.2 mm , while the mean TRE for soft tissue targets was 2.8 \ensuremath{\pm} 0.2 mm . The average VOI between the registered and manually delineated ROI contours was 76.2 \ensuremath{\pm} 4.6 \% , which is consistent with that reported in previous studies. Conclusions: The authors have implemented and validated a deformable image registration method to register planning CTimages to weekly CBCTimages in head-and-neck cancer cases. The accuracy of the TRE values suggests that they can be used as a promising tool for automatic target delineation on CBCT.},
+  timestamp = {2016-06-09T11:26:39Z},
+  number = {4},
+  urldate = {2016-06-09},
+  journal = {Medical Physics},
+  author = {Hou, Jidong and Guerrero, Mariana and Chen, Wenjuan and D'Souza, Warren D.},
+  month = apr,
+  year = {2011},
+  keywords = {cancer,Computed tomography,Cone beam computed tomography,image registration,Medical imaging},
+  pages = {2088--2094},
+  file = {hou2011.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/C9M3R4W2/hou2011.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/EK685H5N/1.html:text/html}
+}
+
+@article{rueckert1999,
+  title = {Nonrigid registration using free-form deformations: application to breast {{MR}} images},
+  volume = {18},
+  issn = {0278-0062},
+  shorttitle = {Nonrigid registration using free-form deformations},
+  doi = {10.1109/42.796284},
+  abstract = {In this paper the authors present a new approach for the nonrigid registration of contrast-enhanced breast MRI. A hierarchical transformation model of the motion of the breast has been developed. The global motion of the breast is modeled by an affine transformation while the local breast motion is described by a free-form deformation (FFD) based on B-splines. Normalized mutual information is used as a voxel-based similarity measure which is insensitive to intensity changes as a result of the contrast enhancement. Registration is achieved by minimizing a cost function, which represents a combination of the cost associated with the smoothness of the transformation and the cost associated with the image similarity. The algorithm has been applied to the fully automated registration of three-dimensional (3-D) breast MRI in volunteers and patients. In particular, the authors have compared the results of the proposed nonrigid registration algorithm to those obtained using rigid and affine registration techniques. The results clearly indicate that the nonrigid registration algorithm is much better able to recover the motion and deformation of the breast than rigid or affine registration algorithms.},
+  timestamp = {2016-06-14T10:37:17Z},
+  number = {8},
+  journal = {IEEE Transactions on Medical Imaging},
+  author = {Rueckert, D. and Sonoda, L. I. and Hayes, C. and Hill, D. L. G. and Leach, M. O. and Hawkes, D. J.},
+  month = aug,
+  year = {1999},
+  keywords = {affine transformation,biomechanics,Biomedical imaging,biomedical MRI,Breast,Breast cancer,breast motion,Breast tissue,B-splines,Cancer detection,contrast enhancement,Cost function,Cyclic redundancy check,Diseases,Female,free-form deformation,global motion,hierarchical transformation model,Humans,image motion analysis,Image Processing; Computer-Assisted,image registration,intensity changes,local breast motion,Magnetic Resonance Imaging,mammography,medical diagnostic imaging,medical image processing,MRI,MR mammography,Splines (mathematics),voxel-based similarity measure},
+  pages = {712--721},
+  file = {IEEE Xplore Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/G8NR7CXV/Rueckert idr. - 1999 - Nonrigid registration using free-form deformations.pdf:application/pdf;IEEE Xplore Abstract Record:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/WCNTER4S/articleDetails.html:text/html}
+}
+
+@article{burnet2004,
+  title = {Defining the tumour and target volumes for radiotherapy},
+  volume = {4},
+  issn = {1740-5025},
+  doi = {10.1102/1470-7330.2004.0054},
+  abstract = {Radiotherapy is a localised treatment. The definition of tumour and target volumes for radiotherapy is vital to its successful execution. This requires the best possible characterisation of the location and extent of tumour. Diagnostic imaging, including help and advice from diagnostic specialists, is therefore essential for radiotherapy planning. There are three main volumes in radiotherapy planning. The first is the position and extent of gross tumour, i.e. what can be seen, palpated or imaged; this is known as the gross tumour volume (GTV). Developments in imaging have contributed to the definition of the GTV. The second volume contains the GTV, plus a margin for sub-clinical disease spread which therefore cannot be fully imaged; this is known as the clinical target volume (CTV). It is the most difficult because it cannot be accurately defined for an individual patient, but future developments in imaging, especially towards the molecular level, should allow more specific delineation of the CTV. The CTV is important because this volume must be adequately treated to achieve cure. The third volume, the planning target volume (PTV), allows for uncertainties in planning or treatment delivery. It is a geometric concept designed to ensure that the radiotherapy dose is actually delivered to the CTV. Radiotherapy planning must always consider critical normal tissue structures, known as organs at risk (ORs). In some specific circumstances, it is necessary to add a margin analogous to the PTV margin around an OR to ensure that the organ cannot receive a higher-than-safe dose; this gives a planning organ at risk volume. This applies to an organ such as the spinal cord, where damage to a small amount of normal tissue would produce a severe clinical manifestation. The concepts of GTV, CTV and PTV have been enormously helpful in developing modern radiotherapy. Attention to detail in radiotherapy planning is vital, and does affect outcomes: `the devil is in the detail'. Radiotherapy planning is also dependent on high quality imaging, and the better the imaging the better will be the outcomes from radiotherapy.},
+  timestamp = {2016-06-14T12:49:24Z},
+  number = {2},
+  urldate = {2016-06-03},
+  journal = {Cancer Imaging},
+  author = {Burnet, Neil G and Thomas, Simon J and Burton, Kate E and Jefferies, Sarah J},
+  month = oct,
+  year = {2004},
+  pages = {153--161},
+  file = {PubMed Central Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/EQ3PUPRR/Burnet idr. - 2004 - Defining the tumour and target volumes for radioth.pdf:application/pdf},
+  pmid = {18250025},
+  pmcid = {PMC1434601}
+}
+
+@article{zelefsky2012,
+  title = {Improved {{Clinical Outcomes With High-Dose Image Guided Radiotherapy Compared With Non-IGRT}} for the {{Treatment}} of {{Clinically Localized Prostate Cancer}}},
+  volume = {84},
+  issn = {03603016},
+  doi = {10.1016/j.ijrobp.2011.11.047},
+  timestamp = {2016-06-14T12:48:13Z},
+  number = {1},
+  urldate = {2016-05-05},
+  journal = {International Journal of Radiation Oncology*Biology*Physics},
+  author = {Zelefsky, Michael J. and Kollmeier, Marisa and Cox, Brett and Fidaleo, Anthony and Sperling, Dahlia and Pei, Xin and Carver, Brett and Coleman, Jonathan and Lovelock, Michael and Hunt, Margie},
+  month = sep,
+  year = {2012},
+  pages = {125--129},
+  file = {zelefsky2012.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/ZRAT9UII/zelefsky2012.pdf:application/pdf}
+}
+
+@article{veiga2015,
+  title = {Toward adaptive radiotherapy for head and neck patients: {{Uncertainties}} in dose warping due to the choice of deformable registration algorithm},
+  volume = {42},
+  issn = {0094-2405},
+  shorttitle = {Toward adaptive radiotherapy for head and neck patients},
+  doi = {10.1118/1.4905050},
+  abstract = {PURPOSE: The aims of this work were to evaluate the performance of several deformable image registration (DIR) algorithms implemented in our in-house software (NiftyReg) and the uncertainties inherent to using different algorithms for dose warping.
+METHODS: The authors describe a DIR based adaptive radiotherapy workflow, using CT and cone-beam CT (CBCT) imaging. The transformations that mapped the anatomy between the two time points were obtained using four different DIR approaches available in NiftyReg. These included a standard unidirectional algorithm and more sophisticated bidirectional ones that encourage or ensure inverse consistency. The forward (CT-to-CBCT) deformation vector fields (DVFs) were used to propagate the CT Hounsfield units and structures to the daily geometry for "dose of the day" calculations, while the backward (CBCT-to-CT) DVFs were used to remap the dose of the day onto the planning CT (pCT). Data from five head and neck patients were used to evaluate the performance of each implementation based on geometrical matching, physical properties of the DVFs, and similarity between warped dose distributions. Geometrical matching was verified in terms of dice similarity coefficient (DSC), distance transform, false positives, and false negatives. The physical properties of the DVFs were assessed calculating the harmonic energy, determinant of the Jacobian, and inverse consistency error of the transformations. Dose distributions were displayed on the pCT dose space and compared using dose difference (DD), distance to dose difference, and dose volume histograms.
+RESULTS: All the DIR algorithms gave similar results in terms of geometrical matching, with an average DSC of 0.85 \ensuremath{\pm} 0.08, but the underlying properties of the DVFs varied in terms of smoothness and inverse consistency. When comparing the doses warped by different algorithms, we found a root mean square DD of 1.9\% \ensuremath{\pm} 0.8\% of the prescribed dose (pD) and that an average of 9\% \ensuremath{\pm} 4\% of voxels within the treated volume failed a 2\%pD DD-test (DD2\%-pp). Larger DD2\%-pp was found within the high dose gradient (21\% \ensuremath{\pm} 6\%) and regions where the CBCT quality was poorer (28\% \ensuremath{\pm} 9\%). The differences when estimating the mean and maximum dose delivered to organs-at-risk were up to 2.0\%pD and 2.8\%pD, respectively.
+CONCLUSIONS: The authors evaluated several DIR algorithms for CT-to-CBCT registrations. In spite of all methods resulting in comparable geometrical matching, the choice of DIR implementation leads to uncertainties in dose warped, particularly in regions of high gradient and/or poor imaging quality.},
+  timestamp = {2016-06-14T12:46:41Z},
+  number = {2},
+  journal = {Medical Physics},
+  author = {Veiga, Catarina and Louren{\c c}o, Ana M{\'o}nica and Mouinuddin, Syed and {van Herk}, Marcel and Modat, Marc and Ourselin, S{\'e}bastien and Royle, Gary and McClelland, Jamie R.},
+  month = feb,
+  year = {2015},
+  keywords = {Algorithms,Cone-Beam Computed Tomography,Head and Neck Neoplasms,Humans,Image Processing; Computer-Assisted,Phantoms; Imaging,Radiation Dosage,Radiotherapy; Intensity-Modulated,Radiotherapy Planning; Computer-Assisted,Retrospective Studies,Uncertainty},
+  pages = {760--769},
+  file = {veiga2015.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/HFCT7FUC/veiga2015.pdf:application/pdf},
+  pmid = {25652490}
+}
+
+@article{baskar2012,
+  title = {Cancer and radiation therapy: current advances and future directions},
+  volume = {9},
+  issn = {1449-1907},
+  shorttitle = {Cancer and radiation therapy},
+  doi = {10.7150/ijms.3635},
+  abstract = {In recent years remarkable progress has been made towards the understanding of proposed hallmarks of cancer development and treatment. However with its increasing incidence, the clinical management of cancer continues to be a challenge for the 21st century. Treatment modalities comprise of radiation therapy, surgery, chemotherapy, immunotherapy and hormonal therapy. Radiation therapy remains an important component of cancer treatment with approximately 50\% of all cancer patients receiving radiation therapy during their course of illness; it contributes towards 40\% of curative treatment for cancer. The main goal of radiation therapy is to deprive cancer cells of their multiplication (cell division) potential. Celebrating a century of advances since Marie Curie won her second Nobel Prize for her research into radium, 2011 has been designated the Year of Radiation therapy in the UK. Over the last 100 years, ongoing advances in the techniques of radiation treatment and progress made in understanding the biology of cancer cell responses to radiation will endeavor to increase the survival and reduce treatment side effects for cancer patients. In this review, principles, application and advances in radiation therapy with their biological end points are discussed.},
+  language = {eng},
+  timestamp = {2016-06-21T12:38:25Z},
+  number = {3},
+  journal = {Int J Med Sci},
+  author = {Baskar, Rajamanickam and Lee, Kuo Ann and Yeo, Richard and Yeoh, Kheng-Wei},
+  year = {2012},
+  keywords = {Apoptosis,Autophagy,cancer,Cell death.,DNA Damage,Dose Fractionation,Humans,Linear energy transfer,Neoplasms,Photons,Radiation therapy,Radiosurgery,Radiotherapy; Conformal,Radiotherapy; Image-Guided,Radiotherapy; Intensity-Modulated},
+  pages = {193--199},
+  file = {baskar.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/6CBMCH5V/baskar.pdf:application/pdf},
+  pmid = {22408567},
+  pmcid = {PMC3298009}
+}
+
+@article{bentzen2005,
+  title = {Theragnostic imaging for radiation oncology: dose-painting by numbers},
+  volume = {6},
+  issn = {1470-2045},
+  shorttitle = {Theragnostic imaging for radiation oncology},
+  doi = {10.1016/S1470-2045(05)01737-7},
+  abstract = {Summary
+Theragnostic imaging for radiation oncology is the use of molecular and functional imaging to prescribe the distribution of radiation in four dimensions\textemdash{}the three dimensions of space plus time\textemdash{}of radiotherapy alone or combined with other treatment modalities in an individual patient. Several new imaging targets for positron-emission tomography, single-photon-emission CT, and magnetic resonance spectroscopy allow variations in microenvironmental or cellular phenotypes that modulate the effect of radiation to be mapped in three dimensions. Dose-painting by numbers is a strategy by which the dose distribution delivered by inverse planned intensity-modulated radiotherapy is prescribed in four dimensions. This approach will revolutionise the way that radiotherapy is prescribed and planned and, at least in theory, will improve the therapeutic outcome in terms of local tumour control and side-effects to unaffected tissue},
+  timestamp = {2016-06-16T08:55:34Z},
+  number = {2},
+  urldate = {2016-06-16},
+  journal = {The Lancet Oncology},
+  author = {Bentzen, S\o{}ren M},
+  month = feb,
+  year = {2005},
+  pages = {112--117},
+  file = {ScienceDirect Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/SHGWZZGX/Bentzen - 2005 - Theragnostic imaging for radiation oncology dose-.pdf:application/pdf;ScienceDirect Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/MQ5MIZPB/S1470204505017377.html:text/html}
+}
+
+@article{avants2006,
+  title = {Lagrangian frame diffeomorphic image registration: {{Morphometric}} comparison of human and chimpanzee cortex},
+  volume = {10},
+  issn = {1361-8415},
+  shorttitle = {Lagrangian frame diffeomorphic image registration},
+  doi = {10.1016/j.media.2005.03.005},
+  abstract = {We develop a novel Lagrangian reference frame diffeomorphic image and landmark registration method. The algorithm uses the fixed Langrangian reference frame to define the map between coordinate systems, but also generates and stores the inverse map from the Eulerian to the Lagrangian frame. Computing both maps allows facile computation of both Eulerian and Langrangian quantities. We apply this algorithm to estimating a putative evolutionary change of coordinates between a population of chimpanzee and human cortices. Inter-species functional homologues fix the map explicitly, where they are known, while image similarities guide the alignment elsewhere. This map allows detailed study of the volumetric change between chimp and human cortex. Instead of basing the inter-species study on a single species atlas, we diffeomorphically connect the mean shape and intensity templates for each group. The human statistics then map diffeomorphically into the space of the chimpanzee cortex providing a comparison between species. The population statistics show a significant doubling of the relative prefrontal lobe size in humans, as compared to chimpanzees.},
+  timestamp = {2016-06-14T12:48:03Z},
+  number = {3},
+  journal = {Medical Image Analysis},
+  author = {Avants, Brian B. and Schoenemann, P. Thomas and Gee, James C.},
+  month = jun,
+  year = {2006},
+  keywords = {Algorithms,Animals,Anthropometry,Cerebral Cortex,Humans,Image Enhancement,Image Interpretation; Computer-Assisted,Imaging; Three-Dimensional,Information Storage and Retrieval,Magnetic Resonance Imaging,Organ Size,Pan troglodytes,Reproducibility of Results,Sensitivity and Specificity,Species Specificity,Subtraction Technique},
+  pages = {397--412},
+  file = {avants2006.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/G4AGKUDK/avants2006.pdf:application/pdf},
+  pmid = {15948659}
+}
+
+@article{mencarelli2014,
+  title = {Deformable image registration for adaptive radiation therapy of head and neck cancer: accuracy and precision in the presence of tumor changes},
+  volume = {90},
+  issn = {1879-355X},
+  shorttitle = {Deformable image registration for adaptive radiation therapy of head and neck cancer},
+  doi = {10.1016/j.ijrobp.2014.06.045},
+  abstract = {PURPOSE: To compare deformable image registration (DIR) accuracy and precision for normal and tumor tissues in head and neck cancer patients during the course of radiation therapy (RT).
+METHODS AND MATERIALS: Thirteen patients with oropharyngeal tumors, who underwent submucosal implantation of small gold markers (average 6, range 4-10) around the tumor and were treated with RT were retrospectively selected. Two observers identified 15 anatomical features (landmarks) representative of normal tissues in the planning computed tomography (pCT) scan and in weekly cone beam CTs (CBCTs). Gold markers were digitally removed after semiautomatic identification in pCTs and CBCTs. Subsequently, landmarks and gold markers on pCT were propagated to CBCTs, using a b-spline-based DIR and, for comparison, rigid registration (RR). To account for observer variability, the pair-wise difference analysis of variance method was applied. DIR accuracy (systematic error) and precision (random error) for landmarks and gold markers were quantified. Time trend of the precisions for RR and DIR over the weekly CBCTs were evaluated.
+RESULTS: DIR accuracies were submillimeter and similar for normal and tumor tissue. DIR precision (1 SD) on the other hand was significantly different (P\ensuremath{<}.01), with 2.2 mm vector length in normal tissue versus 3.3 mm in tumor tissue. No significant time trend in DIR precision was found for normal tissue, whereas in tumor, DIR precision was significantly (P\ensuremath{<}.009) degraded during the course of treatment by 0.21 mm/week.
+CONCLUSIONS: DIR for tumor registration proved to be less precise than that for normal tissues due to limited contrast and complex non-elastic tumor response. Caution should therefore be exercised when applying DIR for tumor changes in adaptive procedures.},
+  timestamp = {2016-06-14T12:49:06Z},
+  number = {3},
+  journal = {International Journal of Radiation Oncology, Biology, Physics},
+  author = {Mencarelli, Angelo and {van Kranen}, Simon Robert and Hamming-Vrieze, Olga and {van Beek}, Suzanne and {Nico Rasch}, Coenraad Robert and {van Herk}, Marcel and Sonke, Jan-Jakob},
+  month = nov,
+  year = {2014},
+  keywords = {Algorithms,Analysis of Variance,Anatomic Landmarks,Cone-Beam Computed Tomography,Fiducial Markers,Gold,Humans,Observer Variation,Organs at Risk,Oropharyngeal Neoplasms,Radiology Information Systems,Radiotherapy; Image-Guided,Radiotherapy Planning; Computer-Assisted},
+  pages = {680--687},
+  file = {mencarelli2014.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/WQWV5V4X/mencarelli2014.pdf:application/pdf},
+  pmid = {25151537}
+}
+
+@article{nithiananthan2009,
+  title = {Demons deformable registration for {{CBCT}}-guided procedures in the head and neck: convergence and accuracy},
+  volume = {36},
+  issn = {0094-2405},
+  shorttitle = {Demons deformable registration for {{CBCT}}-guided procedures in the head and neck},
+  doi = {10.1118/1.3223631},
+  abstract = {PURPOSE: The accuracy and convergence behavior of a variant of the Demons deformable registration algorithm were investigated for use in cone-beam CT (CBCT)-guided procedures of the head and neck. Online use of deformable registration for guidance of therapeutic procedures such as image-guided surgery or radiation therapy places trade-offs on accuracy and computational expense. This work describes a convergence criterion for Demons registration developed to balance these demands; the accuracy of a multiscale Demons implementation using this convergence criterion is quantified in CBCT images of the head and neck.
+METHODS: Using an open-source "symmetric" Demons registration algorithm, a convergence criterion based on the change in the deformation field between iterations was developed to advance among multiple levels of a multiscale image pyramid in a manner that optimized accuracy and computation time. The convergence criterion was optimized in cadaver studies involving CBCT images acquired using a surgical C-arm prototype modified for 3D intraoperative imaging. CBCT-to-CBCT registration was performed and accuracy was quantified in terms of the normalized cross-correlation (NCC) and target registration error (TRE). The accuracy and robustness of the algorithm were then tested in clinical CBCT images of ten patients undergoing radiation therapy of the head and neck.
+RESULTS: The cadaver model allowed optimization of the convergence factor and initial measurements of registration accuracy: Demons registration exhibited TRE=(0.8+/-0.3) mm and NCC =0.99 in the cadaveric head compared to TRE=(2.6+/-1.0) mm and NCC=0.93 with rigid registration. Similarly for the patient data, Demons registration gave mean TRE=(1.6+/-0.9) mm compared to rigid registration TRE=(3.6+/-1.9) mm, suggesting registration accuracy at or near the voxel size of the patient images (1 x 1 x 2 mm3). The multiscale implementation based on optimal convergence criteria completed registration in 52 s for the cadaveric head and in an average time of 270 s for the larger FOV patient images.
+CONCLUSIONS: Appropriate selection of convergence and multiscale parameters in Demons registration was shown to reduce computational expense without sacrificing registration performance. For intraoperative CBCT imaging with deformable registration, the ability to perform accurate registration within the stringent time requirements of the operating environment could offer a useful clinical tool allowing integration of preoperative information while accurately reflecting changes in the patient anatomy. Similarly for CBCT-guided radiation therapy, fast accurate deformable registration could further augment high-precision treatment strategies.},
+  language = {eng},
+  timestamp = {2016-06-23T06:39:46Z},
+  number = {10},
+  journal = {Med Phys},
+  author = {Nithiananthan, S. and Brock, K. K. and Daly, M. J. and Chan, H. and Irish, J. C. and Siewerdsen, J. H.},
+  month = oct,
+  year = {2009},
+  keywords = {Algorithms,Head and Neck Neoplasms,Humans,Imaging; Three-Dimensional,Pattern Recognition; Automated,Radiographic Image Enhancement,Radiographic Image Interpretation; Computer-Assisted,Radiography; Interventional,Reproducibility of Results,Sensitivity and Specificity,Subtraction Technique,Surgery; Computer-Assisted},
+  pages = {4755--4764},
+  pmid = {19928106},
+  pmcid = {PMC2771717}
+}
+
+@article{jaffray2012,
+  title = {Image-guided radiotherapy: from current concept to future perspectives},
+  volume = {9},
+  copyright = {\textcopyright{} 2012 Nature Publishing Group},
+  issn = {1759-4774},
+  shorttitle = {Image-guided radiotherapy},
+  doi = {10.1038/nrclinonc.2012.194},
+  abstract = {Radiotherapy is a highly effective, targeted therapy for the management of cancer. Technological innovations have enabled the direct integration of imaging technology into the radiation treatment device to increase the precision and accuracy of radiation delivery. As well as addressing a clinical need to better control the placement of the dose within the body, image-guided radiotherapy has enabled innovators in the field to accelerate their exploration of a number of different paradigms of radiation delivery, including toxicity reduction, dose escalation, hypofractionation, voxelization, and adaptation. Although these approaches are already innovative trends in radiation oncology, it is anticipated that they will work synergistically with other innovations in cancer management (including biomarker strategies, novel systemic and local therapies) as part of the broader goal of personalized cancer medicine. This Review discusses the rationale for adopting image-guidance approaches in radiotherapy, and the technology for achieving precision and accuracy in the context of different paradigms within the evolving radiation oncology practice. It also examines exciting advances in radiotherapy technology that suggest a convergence of radiotherapy practice in which patient-specific radiotherapy treatment courses are one of the most personalized forms of intervention in cancer medicine.},
+  language = {en},
+  timestamp = {2016-06-21T11:21:34Z},
+  number = {12},
+  urldate = {2016-06-21},
+  journal = {Nat Rev Clin Oncol},
+  author = {Jaffray, David A.},
+  month = dec,
+  year = {2012},
+  pages = {688--699},
+  file = {jaffray2012.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/C77TP6BA/jaffray2012.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/D7Q2A9FC/nrclinonc.2012.194.html:text/html}
+}
+
+@article{varadhan2013,
+  title = {A framework for deformable image registration validation in radiotherapy clinical applications},
+  volume = {14},
+  issn = {1526-9914},
+  abstract = {Quantitative validation of deformable image registration (DIR) algorithms is extremely difficult because of the complexity involved in constructing a deformable phantom that can duplicate various clinical scenarios. The purpose of this study is to describe a framework to test the accuracy of DIR based on computational modeling and evaluating using inverse consistency and other methods. Three clinically relevant organ deformations were created in prostate (distended rectum and rectal gas), head and neck (large neck flexion), and lung (inhale and exhale lung volumes with variable contrast enhancement) study sets. DIR was performed using both B-spline and diffeomorphic demons algorithms in the forward and inverse direction. A compositive accumulation of forward and inverse deformation vector fields was done to quantify the inverse consistency error (ICE). The anatomical correspondence of tumor and organs at risk was quantified by comparing the original RT structures with those obtained after DIR. Further, the physical characteristics of the deformation field, namely the Jacobian and harmonic energy, were computed to quantify the preservation of image topology and regularity of spatial transformation obtained in DIR. The ICE was comparable in prostate case but the B-spline algorithm had significantly better anatomical correspondence for rectum and prostate than diffeomorphic demons algorithm. The ICE was 6.5 mm for demons algorithm for head and neck case when compared to 0.7 mm for B-spline. Since the induced neck flexion was large, the average Dice similarity coefficient between both algorithms was only 0.87, 0.52, 0.81, and 0.67 for tumor, cord, parotids, and mandible, respectively. The B-spline algorithm accurately estimated deformations between images with variable contrast in our lung study, while diffeomorphic demons algorithm led to gross errors on structures affected by contrast variation. The proposed framework offers the application of known deformations on any image datasets, to evaluate the overall accuracy and limitations of a DIR algorithm used in radiation oncology. The evaluation based on anatomical correspondence, physical characteristics of deformation field, and image characteristics can facilitate DIR verification with the ultimate goal of implementing adaptive radiotherapy. The suitability of application of a particular evaluation metric in validating DIR is dependent on the clinical deformation observed.},
+  timestamp = {2016-06-14T12:50:20Z},
+  number = {1},
+  urldate = {2016-06-08},
+  journal = {Journal of applied clinical medical physics / American College of Medical Physics},
+  author = {Varadhan, Raj and Karangelis, Grigorios and Krishnan, Karthik and Hui, Susanta},
+  month = jan,
+  year = {2013},
+  pages = {4066},
+  file = {PubMed Central Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/AIEKKKWU/Varadhan idr. - 2013 - A framework for deformable image registration vali.pdf:application/pdf},
+  pmid = {23318394},
+  pmcid = {PMC3732001}
+}
+
+@article{iacono2015,
+  title = {{{MIDA}}: {{A Multimodal Imaging-Based Detailed Anatomical Model}} of the {{Human Head}} and {{Neck}}},
+  volume = {10},
+  issn = {1932-6203},
+  shorttitle = {{{MIDA}}},
+  doi = {10.1371/journal.pone.0124126},
+  abstract = {Computational modeling and simulations are increasingly being used to complement experimental testing for analysis of safety and efficacy of medical devices. Multiple voxel- and surface-based whole- and partial-body models have been proposed in the literature, typically with spatial resolution in the range of 1-2 mm and with 10-50 different tissue types resolved. We have developed a multimodal imaging-based detailed anatomical model of the human head and neck, named "MIDA". The model was obtained by integrating three different magnetic resonance imaging (MRI) modalities, the parameters of which were tailored to enhance the signals of specific tissues: i) structural T1- and T2-weighted MRIs; a specific heavily T2-weighted MRI slab with high nerve contrast optimized to enhance the structures of the ear and eye; ii) magnetic resonance angiography (MRA) data to image the vasculature, and iii) diffusion tensor imaging (DTI) to obtain information on anisotropy and fiber orientation. The unique multimodal high-resolution approach allowed resolving 153 structures, including several distinct muscles, bones and skull layers, arteries and veins, nerves, as well as salivary glands. The model offers also a detailed characterization of eyes, ears, and deep brain structures. A special automatic atlas-based segmentation procedure was adopted to include a detailed map of the nuclei of the thalamus and midbrain into the head model. The suitability of the model to simulations involving different numerical methods, discretization approaches, as well as DTI-based tensorial electrical conductivity, was examined in a case-study, in which the electric field was generated by transcranial alternating current stimulation. The voxel- and the surface-based versions of the models are freely available to the scientific community.},
+  timestamp = {2016-06-14T12:47:44Z},
+  number = {4},
+  journal = {PloS One},
+  author = {Iacono, Maria Ida and Neufeld, Esra and Akinnagbe, Esther and Bower, Kelsey and Wolf, Johanna and {Vogiatzis Oikonomidis}, Ioannis and Sharma, Deepika and Lloyd, Bryn and Wilm, Bertram J. and Wyss, Michael and Pruessmann, Klaas P. and Jakab, Andras and Makris, Nikos and Cohen, Ethan D. and Kuster, Niels and Kainz, Wolfgang and Angelone, Leonardo M.},
+  year = {2015},
+  keywords = {Anisotropy,Brain Mapping,Computer Simulation,Diffusion Tensor Imaging,Head,Humans,Image Processing; Computer-Assisted,Magnetic Resonance Angiography,Magnetic Resonance Imaging,Mesencephalon,Midline Thalamic Nuclei,Models; Anatomic,Multimodal Imaging,Neck},
+  pages = {e0124126},
+  file = {journal.pone.0124126.PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/2PIVUA5D/journal.pone.0124126.PDF:application/pdf},
+  pmid = {25901747},
+  pmcid = {PMC4406723}
+}
+
+@incollection{sotiras2015,
+  title = {Graph-based {{Deformable Image Registration}}},
+  copyright = {\textcopyright{}2015 Springer Science+Business Media New York},
+  isbn = {978-0-387-09748-0 978-0-387-09749-7},
+  abstract = {Deformable image registration is a field that has received considerable attention in the medical image analysis community. As a consequence, there is an important body of works that aims to tackle deformable registration. In this chapter we review one class of these techniques that use discrete optimization, and more specifically Markov Random Field models. We begin the chapter by explaining how one can formulate the deformable registration problem as a minimal cost graph problem where the nodes of the graph corresponds to the deformation grid, the graph connectivity encodes regularization constraints, and the labels correspond to 3D displacements. We then explain the use of discrete models in intensity-based volumetric registration. In the third section, we detail the use of Gabor-based attribute vectors in the context of discrete deformable registration, demonstrating the versatility of the graph-based models. In the last section of the chapter, the case of landmark-based registration is discussed. We first explain the discrete graphical model behind establishing landmark correspondences, and then continue to show how one can integrate it with the intensity-based model towards creating enhanced models that combine the best of both worlds.},
+  language = {en},
+  timestamp = {2016-05-31T11:43:29Z},
+  urldate = {2016-05-31},
+  booktitle = {Handbook of {{Biomedical Imaging}}},
+  publisher = {{Springer US}},
+  author = {Sotiras, A. and Ou, Y. and Paragios, N. and Davatzikos, C.},
+  editor = {Paragios, Nikos and Duncan, James and Ayache, Nicholas},
+  year = {2015},
+  keywords = {Computer Imaging; Vision; Pattern Recognition and Graphics,Imaging / Radiology},
+  pages = {331--359},
+  file = {sotiras2015.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/N6CDEQJJ/sotiras2015.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/9AP97IP2/978-0-387-09749-7_18.html:text/html},
+  doi = {10.1007/978-0-387-09749-7_18}
+}
+
+@article{fortunati2013,
+  title = {Tissue segmentation of head and neck {{CT}} images for treatment planning: {{A}} multiatlas approach combined with intensity modeling},
+  volume = {40},
+  issn = {0094-2405},
+  shorttitle = {Tissue segmentation of head and neck {{CT}} images for treatment planning},
+  doi = {10.1118/1.4810971},
+  abstract = {Purpose: Hyperthermia treatment of head and neck tumors requires accurate treatment planning, based on 3D patient models that are derived from segmented 3D images. These segmentations are currently obtained by manual outlining of the relevant tissue regions, which is a tedious and time-consuming procedure (\ensuremath{\sim}8 h) limiting the clinical applicability of hyperthermia treatment. In this context, the authors present and evaluate an automatic segmentation algorithm for CT images of the head and neck. Methods: The proposed method combines anatomical information, based on atlas registration, with local intensity information in a graph cut framework. The method is evaluated with respect to ground truth manual delineation and compared with multiatlas-based segmentation on a dataset of 18 labeled CT images using the Dice similarity coefficient (DSC), the mean surface distance (MSD), and the Hausdorff surface distance (HSD) as evaluation measures. On a subset of 13 labeled images, the influence of different labelers on the method\&apos;s accuracy is quantified and compared with the interobserver variability. Results: For the DSC, the proposed method performs significantly better for the segmentation of all the tissues, except brain stem and spinal cord. The MSD shows a significant improvement for optical nerve, eye vitreous humor, lens, and thyroid. For the HSD, the proposed method performs significantly better for eye vitreous humor and brainstem. The proposed method has a significantly better score for DSC, MSD, and HSD than the multiatlas-based method for the eye vitreous humor. For the majority of the tissues (8/11) the segmentation accuracy of the proposed method is approaching the interobserver agreement. The authors\&apos; method showed better robustness to variations in atlas labeling compared with multiatlas segmentation. Moreover, the method improved the segmentation reproducibility compared with human observer\&apos;s segmentations. Conclusions: In conclusion, the proposed framework provides in an accurate automatic segmentation of head and neck tissues in CT images for the generation of 3D patient models, which improves reproducibility, and substantially reduces labor involved in therapy planning.},
+  timestamp = {2016-06-14T11:27:09Z},
+  number = {7},
+  urldate = {2016-06-14},
+  journal = {Medical Physics},
+  author = {Fortunati, Valerio and Verhaart, Ren{\'e} F. and {van der Lijn}, Fedde and Niessen, Wiro J. and Veenland, Jifke F. and Paulides, Margarethus M. and {van Walsum}, Theo},
+  month = jul,
+  year = {2013},
+  keywords = {cancer,Medical image segmentation,Medical imaging,Spatial analysis,Tissues},
+  pages = {071905},
+  file = {Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/KE3HCKBE/Fortunati idr. - 2013 - Tissue segmentation of head and neck CT images for.pdf:application/pdf;Snapshot:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/PCBPRTII/1.html:text/html}
+}
+
+@article{vercauteren2009,
+  title = {Diffeomorphic demons: efficient non-parametric image registration},
+  volume = {45},
+  issn = {1095-9572},
+  shorttitle = {Diffeomorphic demons},
+  doi = {10.1016/j.neuroimage.2008.10.040},
+  abstract = {We propose an efficient non-parametric diffeomorphic image registration algorithm based on Thirion's demons algorithm. In the first part of this paper, we show that Thirion's demons algorithm can be seen as an optimization procedure on the entire space of displacement fields. We provide strong theoretical roots to the different variants of Thirion's demons algorithm. This analysis predicts a theoretical advantage for the symmetric forces variant of the demons algorithm. We show on controlled experiments that this advantage is confirmed in practice and yields a faster convergence. In the second part of this paper, we adapt the optimization procedure underlying the demons algorithm to a space of diffeomorphic transformations. In contrast to many diffeomorphic registration algorithms, our solution is computationally efficient since in practice it only replaces an addition of displacement fields by a few compositions. Our experiments show that in addition to being diffeomorphic, our algorithm provides results that are similar to the ones from the demons algorithm but with transformations that are much smoother and closer to the gold standard, available in controlled experiments, in terms of Jacobians.},
+  language = {eng},
+  timestamp = {2016-06-15T08:09:41Z},
+  number = {1 Suppl},
+  journal = {Neuroimage},
+  author = {Vercauteren, Tom and Pennec, Xavier and Perchant, Aymeric and Ayache, Nicholas},
+  month = mar,
+  year = {2009},
+  keywords = {Algorithms,Humans,Image Processing; Computer-Assisted},
+  pages = {S61--72},
+  file = {DiffeoDemons.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/CTSGR7AQ/DiffeoDemons.pdf:application/pdf},
+  pmid = {19041946}
+}
+
+@article{al-mayah2015,
+  title = {Radiation dose response simulation for biomechanical-based deformable image registration of head and neck cancer treatment},
+  volume = {60},
+  issn = {1361-6560},
+  doi = {10.1088/0031-9155/60/21/8481},
+  abstract = {Biomechanical-based deformable image registration is conducted on the head and neck region. Patient specific 3D finite element models consisting of parotid glands (PG), submandibular glands (SG), tumor, vertebrae (VB), mandible, and external body are used to register pre-treatment MRI to post-treatment MR images to model the dose response using image data of five patients. The images are registered using combinations of vertebrae and mandible alignments, and surface projection of the external body as boundary conditions. In addition, the dose response is simulated by applying a new loading technique in the form of a dose-induced shrinkage using the dose-volume relationship. The dose-induced load is applied as dose-induced shrinkage of the tumor and four salivary glands. The Dice Similarity Coefficient (DSC) is calculated for the four salivary glands, and tumor to calculate the volume overlap of the structures after deformable registration. A substantial improvement in the registration is found by including the dose-induced shrinkage. The greatest registration improvement is found in the four glands where the average DSC increases from 0.53, 0.55, 0.32, and 0.37 to 0.68, 0.68, 0.51, and 0.49 in the left PG, right PG, left SG, and right SG, respectively by using bony alignment of vertebrae and mandible (M), body (B) surface projection and dose (D) (VB+M+B+D).},
+  timestamp = {2016-06-14T12:47:10Z},
+  number = {21},
+  journal = {Physics in Medicine and Biology},
+  author = {Al-Mayah, Adil and Moseley, Joanne and Hunter, Shannon and Brock, Kristy},
+  month = nov,
+  year = {2015},
+  pages = {8481--8489},
+  file = {pmb_60_21_8481.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/ZWKHKWGN/pmb_60_21_8481.pdf:application/pdf},
+  pmid = {26485227}
+}
+
+@article{sharp2014,
+  title = {Vision 20/20: perspectives on automated image segmentation for radiotherapy},
+  volume = {41},
+  issn = {0094-2405},
+  shorttitle = {Vision 20/20},
+  doi = {10.1118/1.4871620},
+  abstract = {Due to rapid advances in radiation therapy (RT), especially image guidance and treatment adaptation, a fast and accurate segmentation of medical images is a very important part of the treatment. Manual delineation of target volumes and organs at risk is still the standard routine for most clinics, even though it is time consuming and prone to intra- and interobserver variations. Automated segmentation methods seek to reduce delineation workload and unify the organ boundary definition. In this paper, the authors review the current autosegmentation methods particularly relevant for applications in RT. The authors outline the methods' strengths and limitations and propose strategies that could lead to wider acceptance of autosegmentation in routine clinical practice. The authors conclude that currently, autosegmentation technology in RT planning is an efficient tool for the clinicians to provide them with a good starting point for review and adjustment. Modern hardware platforms including GPUs allow most of the autosegmentation tasks to be done in a range of a few minutes. In the nearest future, improvements in CT-based autosegmentation tools will be achieved through standardization of imaging and contouring protocols. In the longer term, the authors expect a wider use of multimodality approaches and better understanding of correlation of imaging with biology and pathology.},
+  timestamp = {2016-06-14T12:46:31Z},
+  number = {5},
+  journal = {Medical Physics},
+  author = {Sharp, Gregory and Fritscher, Karl D. and Pekar, Vladimir and Peroni, Marta and Shusharina, Nadya and Veeraraghavan, Harini and Yang, Jinzhong},
+  month = may,
+  year = {2014},
+  keywords = {Artificial Intelligence,Humans,Image Processing; Computer-Assisted,Magnetic Resonance Imaging,Pattern Recognition; Automated,Radiotherapy; Computer-Assisted,Software,Tomography; X-Ray Computed},
+  pages = {050902},
+  file = {1.4871620.pdf:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/H8X7TAJ9/1.4871620.pdf:application/pdf},
+  pmid = {24784366},
+  pmcid = {PMC4000389}
+}
+
+@article{huttenlocher1993,
+  title = {Comparing images using the {{Hausdorff}} distance},
+  volume = {15},
+  issn = {0162-8828},
+  doi = {10.1109/34.232073},
+  abstract = {The Hausdorff distance measures the extent to which each point of a model set lies near some point of an image set and vice versa. Thus, this distance can be used to determine the degree of resemblance between two objects that are superimposed on one another. Efficient algorithms for computing the Hausdorff distance between all possible relative positions of a binary image and a model are presented. The focus is primarily on the case in which the model is only allowed to translate with respect to the image. The techniques are extended to rigid motion. The Hausdorff distance computation differs from many other shape comparison methods in that no correspondence between the model and the image is derived. The method is quite tolerant of small position errors such as those that occur with edge detectors and other feature extraction methods. It is shown that the method extends naturally to the problem of comparing a portion of a model against an image},
+  timestamp = {2016-06-15T11:15:50Z},
+  number = {9},
+  journal = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  author = {Huttenlocher, D. P. and Klanderman, G. A. and Rucklidge, W. J.},
+  month = sep,
+  year = {1993},
+  keywords = {binary image,Computer science,Computer vision,Councils,Detectors,Feature extraction,Hausdorff distance,image comparison,Image edge detection,image processing,Pattern matching,Pattern recognition,position error tolerance,rigid motion,Scholarships,Shape,shape comparison methods,translation},
+  pages = {850--863},
+  file = {IEEE Xplore Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/CHDXX5TF/Huttenlocher idr. - 1993 - Comparing images using the Hausdorff distance.pdf:application/pdf;IEEE Xplore Abstract Record:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/ZZHKXD85/abs_all.html:text/html}
+}
+
+@inproceedings{guyader2015,
+  title = {Groupwise image registration of multimodal head-and-neck images},
+  doi = {10.1109/ISBI.2015.7163976},
+  abstract = {Fusion of multimodal medical images using deformable registration is of high interest for head-and-neck tumour treatment planning. In this context, more than two images often have to be aligned for a given patient. The conventional, pairwise way to register multiple images is to select one of them as fixed reference and independently align each remaining image with it. An alternative method would be to simultaneously register the images using a groupwise registration scheme, thus eliminating the need to select a reference image and avoiding any bias due to this arbitrary choice. In this study, we propose a novel groupwise image registration technique, combining a principal component analysis (PCA) based similarity metric and modality independent neighbourhood descriptors (MIND). Results on 16 patients show that the images are slightly better aligned when using the proposed registration method than when using pairwise registration.},
+  timestamp = {2016-05-19T10:59:20Z},
+  booktitle = {2015 {{IEEE}} 12th {{International Symposium}} on {{Biomedical Imaging}} ({{ISBI}})},
+  author = {Guyader, J. M. and Huizinga, W. and Fortunati, V. and Veenland, J. F. and Paulides, M. M. and Niessen, W. J. and Klein, S.},
+  month = apr,
+  year = {2015},
+  keywords = {Biomedical imaging,biomedical MRI,cancer,Computed tomography,computerised tomography,CT,deformable,deformable registration,groupwise,groupwise image registration,head and neck,head-and-neck tumour treatment planning,image fusion,image registration,Magnetic Resonance Imaging,Measurement,medical image processing,MIND,modality independent neighbourhood descriptors,Motion compensation,MRI,multimodal head-and-neck images,multimodality registration,PCA,Planning,principal component analysis,Registers,similarity metric,Splines (mathematics),tumours},
+  pages = {730--733},
+  file = {IEEE Xplore Full Text PDF:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/9HPB5CE6/Guyader idr. - 2015 - Groupwise image registration of multimodal head-an.pdf:application/pdf;IEEE Xplore Abstract Record:/home/domen/.mozilla/firefox/mwad0hks.default/zotero/storage/B94QIQZM/abs_all.html:text/html}
+}
+
+
